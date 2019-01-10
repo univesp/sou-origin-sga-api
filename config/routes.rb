@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'application#route_not_found'
+  namespace :v1, defaults: { format: :json } do
+  end
+  match '*unmatched_route', to: 'application#route_not_found', via: :all
 end
