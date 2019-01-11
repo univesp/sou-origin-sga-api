@@ -50,7 +50,7 @@ $ docker-compose up --build
 
 **2**. Consulte a documentação da API
 
-**[Documentação Origin SGA API::v1](https://github.com/univesp/sou-origin-sga-api/blob/devel/CONTRIBUTING.md)**
+**[Documentação Origin SGA API::v1](https://github.com/univesp/sou-origin-sga-api/blob/devel/docs/origin-sgaV1.md)**
 
 ## Contribuindo
 
