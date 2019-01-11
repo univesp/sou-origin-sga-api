@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CursoTest < ActiveSupport::TestCase
+class EmployResponsibleTypeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
