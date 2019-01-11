@@ -1,3 +1,3 @@
 class Student < ApplicationRecord
-  belongs_to :turma, foreing_key: "class_id"
+  belongs_to :turma
 end
