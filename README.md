@@ -50,11 +50,11 @@ $ docker-compose up --build
 
 **2**. Consulte a documentação da API
 
-**[Documentação Origin SGA API::v1](https://github.com/univesp/sou-internship-api/blob/devel/docs/intershipV1.md)**
+**[Documentação Origin SGA API::v1](https://github.com/univesp/sou-origin-sga-api/blob/devel/CONTRIBUTING.md)**
 
 ## Contribuindo
 
-Acesse o arquivo **[CONTRIBUITING]()** para obter informações de como contribuir.
+Acesse o arquivo **[CONTRIBUTING](https://github.com/univesp/sou-origin-sga-api/blob/devel/CONTRIBUTING.md)** para obter informações de como contribuir.
 
 ## Construído com
 
