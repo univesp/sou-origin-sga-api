@@ -17,6 +17,7 @@ HTTP requisição | Descrição | Exemplo
 ------------- | ------------- | -------------
 **GET** /student/{id} | Exibe o estudante pelo id | *http://localhost:3001/v1/student/1*
 **GET** /course/student/{id} | Exibe o curso em que o estudante está matriculado pelo seu respectivo id| *http://localhost:3001/v1/course/student/1*
+**GET** /employee/student/{id} | Exibe o professor responsável pela turma de acordo com o id do aluno | *http://localhost:3001/v1/employee/student/1*
 
 
 ## Student
@@ -114,6 +115,66 @@ Nome | Tipo | Descrição | Exemplo
             "duration_semesters": "6",
             "course_type": "Undergraduation",
             "created_at": "2018-12-13T18:54:38.000Z",
+            "updated_at": null,
+            "deleted_at": null
+        }
+    ]
+}
+```
+**404** ```Not Found```
+
+**500** ```Erro interno no servidor```
+
+## Employee
+
+**GET** /employee/student/{id}
+---
+Exibe o professor
+
+Exibe o professor responsável pela turma de acordo com o id do aluno
+
+### Parâmetros
+
+Nome | Tipo | Descrição | Exemplo
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer** | requerido no PATH | *http://localhost:3001/v1/employee/student/7*
+
+### Status Code
+
+**200** ```OK```
+
+### Exemplo de resposta
+```json
+{
+    "employee": [
+        {
+            "id": 7,
+            "department_id": 1,
+            "occupation_id": 1,
+            "ethnicity_id": 1,
+            "marital_status_id": 1,
+            "country_id": 1,
+            "address_id": 140,
+            "city_id": 1,
+            "name": "teste",
+            "last_name": "testando",
+            "birth_date": null,
+            "gender": null,
+            "flag_on": null,
+            "cpf": null,
+            "blood_type": null,
+            "organ_donor": null,
+            "assumed_name": null,
+            "flag_pwd": null,
+            "flag_visually": null,
+            "flag_hearing": null,
+            "flag_physically": null,
+            "flag_intellectually": null,
+            "description_other_pwd": null,
+            "first_job_ctps": null,
+            "first_job_public": null,
+            "icd": null,
+            "created_at": null,
             "updated_at": null,
             "deleted_at": null
         }
