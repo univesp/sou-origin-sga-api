@@ -1,3 +1,4 @@
 class Course < ApplicationRecord
-  has_many :turma
+  has_many :course_class
+  has_many :student
 end
