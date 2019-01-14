@@ -16,6 +16,8 @@ Não é requerida autorização.
 HTTP requisição | Descrição | Exemplo
 ------------- | ------------- | -------------
 **GET** /student/{id} | Exibe o estudante pelo id | *http://localhost:3001/v1/student/1*
+**GET** /course/student/{id} | Exibe o curso em que o estudante está matriculado pelo seu respectivo id| *http://localhost:3001/v1/course/student/1*
+
 
 ## Student
 
@@ -39,18 +41,18 @@ Nome | Tipo | Descrição | Exemplo
 ```json
 {
     "student": {
-        "id": 65539,
+        "id": 1,
         "class_id": 1515,
         "ethnicity_id": null,
         "marital_status_id": null,
         "countriy_id": null,
         "address_id": 130,
         "city_id": null,
-        "name": "Emerson Martins",
+        "name": "Cezar Tramontina Martins",
         "last_name": null,
-        "cpf": "8383187890",
+        "cpf": "01045412202",
         "academic_register": 1829070,
-        "birth_date": "1972-08-16",
+        "birth_date": "1982-08-16",
         "flag_on": 1,
         "blood_type": null,
         "organ_donor": null,
@@ -78,6 +80,44 @@ Nome | Tipo | Descrição | Exemplo
         "flag_ppi": 0,
         "id_legacy": 52045
     }
+}
+```
+**404** ```Not Found```
+
+**500** ```Erro interno no servidor```
+
+## Course
+
+**GET** /course/student/{id}
+---
+Exibe o curso
+
+Exibe o curso em que o estudante está matriculado pelo seu respectivo id
+
+### Parâmetros
+
+Nome | Tipo | Descrição | Exemplo
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer** | requerido no PATH | *http://localhost:3001/v1/course/student/7*
+
+### Status Code
+
+**200** ```OK```
+
+### Exemplo de resposta
+```json
+{
+    "course": [
+        {
+            "id": 7,
+            "name": "Engenharia de Produção",
+            "duration_semesters": "6",
+            "course_type": "Undergraduation",
+            "created_at": "2018-12-13T18:54:38.000Z",
+            "updated_at": null,
+            "deleted_at": null
+        }
+    ]
 }
 ```
 **404** ```Not Found```
