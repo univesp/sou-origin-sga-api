@@ -66,6 +66,4 @@ Acesse o arquivo **[CONTRIBUTING](https://github.com/univesp/sou-origin-sga-api/
 
 [Robson Arruda](https://github.com/robsonarruda1)
 
-[Thiago Rossi](https://github.com/tcalurarossi)
-
 [Ezequiel Ramos](https://github.com/ezequielor)
